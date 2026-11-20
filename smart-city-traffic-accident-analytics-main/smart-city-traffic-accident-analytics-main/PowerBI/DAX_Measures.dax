@@ -1,0 +1,236 @@
+/* ==============================================================================
+   UrbanFlow Smart City Traffic & Accident Analytics - Production DAX Measures
+   Table Target: 'urbanflow_cleaned' (Fact Table) or '_Key_Measures' (Measures Table)
+   ============================================================================== */
+
+// ==============================================================================
+// FOLDER: 01 Overview & Core Volume Measures (Step 5.8)
+// ==============================================================================
+
+// 1. Total Accidents
+Total Accidents = 
+COUNTROWS('urbanflow_cleaned')
+
+// 2. Total Casualties
+Total Casualties = 
+SUM('urbanflow_cleaned'[casualties])
+
+// 3. Total Vehicles Involved
+Total Vehicles Involved = 
+SUM('urbanflow_cleaned'[vehicles_involved])
+
+// 4. Average Casualties per Accident
+Average Casualties per Accident = 
+DIVIDE([Total Casualties], [Total Accidents], 0)
+
+// 5. Average Vehicles per Accident
+Average Vehicles per Accident = 
+DIVIDE([Total Vehicles Involved], [Total Accidents], 0)
+
+// 6. Average Risk Score
+Average Risk Score = 
+AVERAGE('urbanflow_cleaned'[risk_score])
+
+// 7. Median Risk Score
+Median Risk Score = 
+MEDIAN('urbanflow_cleaned'[risk_score])
+
+// 8. Minimum Risk Score
+Minimum Risk Score = 
+MIN('urbanflow_cleaned'[risk_score])
+
+// 9. Maximum Risk Score
+Maximum Risk Score = 
+MAX('urbanflow_cleaned'[risk_score])
+
+
+// ==============================================================================
+// FOLDER: 02 Severity Measures (Step 5.8 & Step 5.9)
+// ==============================================================================
+
+// Fatal Accidents Count
+Fatal Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[accident_severity] = "fatal"
+)
+
+// Major Accidents Count
+Major Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[accident_severity] = "major"
+)
+
+// Minor Accidents Count
+Minor Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[accident_severity] = "minor"
+)
+
+// Fatal Accident % (Severe Accident %)
+Fatal Accident Rate = 
+DIVIDE([Fatal Accidents], [Total Accidents], 0)
+
+// Major Accident %
+Major Accident Rate = 
+DIVIDE([Major Accidents], [Total Accidents], 0)
+
+// Minor Accident %
+Minor Accident Rate = 
+DIVIDE([Minor Accidents], [Total Accidents], 0)
+
+// Weighted Severity Index (Minor=1, Major=2, Fatal=3)
+Severity Index Score = 
+DIVIDE(
+    ([Fatal Accidents] * 3) + ([Major Accidents] * 2) + ([Minor Accidents] * 1),
+    [Total Accidents],
+    0
+)
+
+
+// ==============================================================================
+// FOLDER: 03 Risk Measures & Tiers (Step 5.8, 5.9 & 5.11)
+// ==============================================================================
+
+// 10. High Risk Accidents (Score >= 0.65)
+High Risk Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[risk_score] >= 0.65
+)
+
+// 11. Low Risk Accidents (Score < 0.30)
+Low Risk Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[risk_score] < 0.30
+)
+
+// 12. Medium Risk Accidents (0.30 <= Score < 0.65)
+Medium Risk Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[risk_score] >= 0.30 && 'urbanflow_cleaned'[risk_score] < 0.65
+)
+
+// High Risk %
+High Risk Accident Pct = 
+DIVIDE([High Risk Accidents], [Total Accidents], 0)
+
+// Medium Risk %
+Medium Risk Accident Pct = 
+DIVIDE([Medium Risk Accidents], [Total Accidents], 0)
+
+// Low Risk %
+Low Risk Accident Pct = 
+DIVIDE([Low Risk Accidents], [Total Accidents], 0)
+
+// Dynamic Risk Status Badge
+Risk Status Badge = 
+SWITCH(
+    TRUE(),
+    [Average Risk Score] >= 0.60, "CRITICAL ALERT 🔴",
+    [Average Risk Score] >= 0.40, "ELEVATED RISK 🟡",
+    "NORMAL / STABLE 🟢"
+)
+
+
+// ==============================================================================
+// FOLDER: 04 Temporal & Traffic Measures (Step 5.8, 5.9 & 5.10)
+// ==============================================================================
+
+// 13. Peak Hour Accidents
+Peak Hour Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[is_peak_hour] = 1
+)
+
+// 14. Non-Peak Hour Accidents
+Non-Peak Hour Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[is_peak_hour] = 0
+)
+
+// Peak Hour Accident %
+Peak Hour Accident Pct = 
+DIVIDE([Peak Hour Accidents], [Total Accidents], 0)
+
+// 15. Weekend Accidents
+Weekend Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[is_weekend] = 1
+)
+
+// 16. Weekday Accidents
+Weekday Accidents = 
+CALCULATE(
+    [Total Accidents],
+    'urbanflow_cleaned'[is_weekend] = 0
+)
+
+// Weekend Accident %
+Weekend Accident Pct = 
+DIVIDE([Weekend Accidents], [Total Accidents], 0)
+
+// Weekday Accident %
+Weekday Accident Pct = 
+DIVIDE([Weekday Accidents], [Total Accidents], 0)
+
+
+// ==============================================================================
+// FOLDER: 05 Time Intelligence Measures (Step 5.10)
+// Requires: 'Dim_Calendar' related to 'urbanflow_cleaned'[date]
+// ==============================================================================
+
+// Accidents YTD (Year-to-Date)
+Accidents YTD = 
+TOTALYTD([Total Accidents], 'Dim_Calendar'[Date])
+
+// Accidents Previous Month
+Accidents Previous Month = 
+CALCULATE(
+    [Total Accidents],
+    PREVIOUSMONTH('Dim_Calendar'[Date])
+)
+
+// Month-over-Month (MoM) Accident Change
+MoM Accident Change = 
+[Total Accidents] - [Accidents Previous Month]
+
+// Month-over-Month (MoM) Accident Growth %
+MoM Accident Growth Pct = 
+DIVIDE([MoM Accident Change], [Accidents Previous Month], 0)
+
+// Accidents Previous Year (YoY Comparison)
+// Note: 2025 has data only through April 15; compare same period or full years
+Accidents Previous Year = 
+CALCULATE(
+    [Total Accidents],
+    SAMEPERIODLASTYEAR('Dim_Calendar'[Date])
+)
+
+// Year-over-Year (YoY) Growth %
+YoY Accident Growth Pct = 
+DIVIDE([Total Accidents] - [Accidents Previous Year], [Accidents Previous Year], 0)
+
+
+// ==============================================================================
+// FOLDER: 06 Geographic & Share Measures (Step 5.9 & 5.11)
+// ==============================================================================
+
+// City Accident Share of Total
+City Accident Share = 
+DIVIDE(
+    [Total Accidents],
+    CALCULATE([Total Accidents], ALLSELECTED('urbanflow_cleaned'[city])),
+    0
+)
+
+// High Risk Density Flag
+High Risk Area Indicator = 
+IF([Average Risk Score] >= 0.44, "Priority Hotspot 🚨", "Standard Corridor")

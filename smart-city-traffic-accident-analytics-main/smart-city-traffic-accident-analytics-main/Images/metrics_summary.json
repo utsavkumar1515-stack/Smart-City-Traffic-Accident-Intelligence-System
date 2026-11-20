@@ -1,0 +1,64 @@
+{
+  "accuracy": 0.55925,
+  "classification_report": {
+    "minor": {
+      "precision": 0.5677943166441136,
+      "recall": 0.9514739229024943,
+      "f1-score": 0.7111864406779661,
+      "support": 2205.0
+    },
+    "major": {
+      "precision": 0.46153846153846156,
+      "recall": 0.005008347245409015,
+      "f1-score": 0.00990916597853014,
+      "support": 1198.0
+    },
+    "fatal": {
+      "precision": 0.4554794520547945,
+      "recall": 0.22278056951423786,
+      "f1-score": 0.2992125984251969,
+      "support": 597.0
+    },
+    "accuracy": 0.55925,
+    "macro avg": {
+      "precision": 0.49493741007912323,
+      "recall": 0.3930876132207137,
+      "f1-score": 0.340102735027231,
+      "support": 4000.0
+    },
+    "weighted avg": {
+      "precision": 0.5192076945000149,
+      "recall": 0.55925,
+      "f1-score": 0.43966680094925925,
+      "support": 4000.0
+    }
+  },
+  "top_features": {
+    "casualties": 0.1850651744900282,
+    "temperature": 0.12282655445421908,
+    "hour": 0.11512921472903784,
+    "vehicles_involved": 0.08357584987898377,
+    "lanes": 0.07463072738570885,
+    "is_weekend": 0.02741359347627528,
+    "traffic_signal": 0.02644882766960799,
+    "road_type_urban": 0.025480265650825014,
+    "road_type_rural": 0.024549213763338684,
+    "traffic_density_medium": 0.02326558424284847,
+    "traffic_density_low": 0.022887993855197426,
+    "visibility_low": 0.02243121988830459
+  },
+  "dataset_summary": {
+    "total_records": 20000,
+    "total_casualties": 34529,
+    "total_vehicles": 59840,
+    "mean_risk_score": 0.43758500000000006,
+    "fatal_count": 2987,
+    "fatal_pct": 14.935,
+    "major_count": 5988,
+    "major_pct": 29.94,
+    "minor_count": 11025,
+    "minor_pct": 55.125,
+    "peak_hour_count": 4948,
+    "peak_hour_pct": 24.740000000000002
+  }
+}

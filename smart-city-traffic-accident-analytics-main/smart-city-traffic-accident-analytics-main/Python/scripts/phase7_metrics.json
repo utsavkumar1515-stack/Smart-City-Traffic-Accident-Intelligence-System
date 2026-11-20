@@ -1,0 +1,1173 @@
+{
+  "step_7_1_risk_stats": {
+    "count": 20000,
+    "min": 0.1,
+    "max": 1.0,
+    "mean": 0.4376,
+    "median": 0.45,
+    "std": 0.2181,
+    "q25": 0.25,
+    "q75": 0.6,
+    "iqr": 0.35,
+    "skewness": 0.1318,
+    "kurtosis": -0.5973,
+    "categories": {
+      "Medium Risk": {
+        "count": 9918,
+        "pct": 49.59
+      },
+      "Low Risk": {
+        "count": 5272,
+        "pct": 26.36
+      },
+      "High Risk": {
+        "count": 4810,
+        "pct": 24.05
+      }
+    }
+  },
+  "step_7_2_location": {
+    "city": [
+      {
+        "city": "bangalore",
+        "total_accidents": 2438,
+        "avg_risk": 0.4402,
+        "median_risk": 0.45,
+        "high_risk_count": 580,
+        "high_risk_pct": 23.79,
+        "avg_casualties": 1.6932
+      },
+      {
+        "city": "chandigarh",
+        "total_accidents": 2577,
+        "avg_risk": 0.4416,
+        "median_risk": 0.45,
+        "high_risk_count": 616,
+        "high_risk_pct": 23.9038,
+        "avg_casualties": 1.6985
+      },
+      {
+        "city": "chennai",
+        "total_accidents": 2575,
+        "avg_risk": 0.4376,
+        "median_risk": 0.45,
+        "high_risk_count": 600,
+        "high_risk_pct": 23.301,
+        "avg_casualties": 1.7736
+      },
+      {
+        "city": "delhi",
+        "total_accidents": 2433,
+        "avg_risk": 0.4371,
+        "median_risk": 0.45,
+        "high_risk_count": 609,
+        "high_risk_pct": 25.0308,
+        "avg_casualties": 1.716
+      },
+      {
+        "city": "hyderabad",
+        "total_accidents": 2409,
+        "avg_risk": 0.4395,
+        "median_risk": 0.45,
+        "high_risk_count": 594,
+        "high_risk_pct": 24.6575,
+        "avg_casualties": 1.6845
+      },
+      {
+        "city": "kolkata",
+        "total_accidents": 2559,
+        "avg_risk": 0.4346,
+        "median_risk": 0.45,
+        "high_risk_count": 597,
+        "high_risk_pct": 23.3294,
+        "avg_casualties": 1.7616
+      },
+      {
+        "city": "mumbai",
+        "total_accidents": 2492,
+        "avg_risk": 0.4343,
+        "median_risk": 0.45,
+        "high_risk_count": 597,
+        "high_risk_pct": 23.9567,
+        "avg_casualties": 1.7243
+      },
+      {
+        "city": "pune",
+        "total_accidents": 2517,
+        "avg_risk": 0.4358,
+        "median_risk": 0.45,
+        "high_risk_count": 617,
+        "high_risk_pct": 24.5133,
+        "avg_casualties": 1.7557
+      }
+    ],
+    "state": [
+      {
+        "state": "delhi",
+        "total_accidents": 2433,
+        "avg_risk": 0.4371,
+        "median_risk": 0.45,
+        "high_risk_count": 609,
+        "high_risk_pct": 25.0308,
+        "avg_casualties": 1.716
+      },
+      {
+        "state": "karnataka",
+        "total_accidents": 2438,
+        "avg_risk": 0.4402,
+        "median_risk": 0.45,
+        "high_risk_count": 580,
+        "high_risk_pct": 23.79,
+        "avg_casualties": 1.6932
+      },
+      {
+        "state": "maharashtra",
+        "total_accidents": 5009,
+        "avg_risk": 0.4351,
+        "median_risk": 0.45,
+        "high_risk_count": 1214,
+        "high_risk_pct": 24.2364,
+        "avg_casualties": 1.7401
+      },
+      {
+        "state": "punjab",
+        "total_accidents": 2577,
+        "avg_risk": 0.4416,
+        "median_risk": 0.45,
+        "high_risk_count": 616,
+        "high_risk_pct": 23.9038,
+        "avg_casualties": 1.6985
+      },
+      {
+        "state": "tamil nadu",
+        "total_accidents": 2575,
+        "avg_risk": 0.4376,
+        "median_risk": 0.45,
+        "high_risk_count": 600,
+        "high_risk_pct": 23.301,
+        "avg_casualties": 1.7736
+      },
+      {
+        "state": "telangana",
+        "total_accidents": 2409,
+        "avg_risk": 0.4395,
+        "median_risk": 0.45,
+        "high_risk_count": 594,
+        "high_risk_pct": 24.6575,
+        "avg_casualties": 1.6845
+      },
+      {
+        "state": "west bengal",
+        "total_accidents": 2559,
+        "avg_risk": 0.4346,
+        "median_risk": 0.45,
+        "high_risk_count": 597,
+        "high_risk_pct": 23.3294,
+        "avg_casualties": 1.7616
+      }
+    ],
+    "road_type": [
+      {
+        "road_type": "highway",
+        "total_accidents": 6616,
+        "avg_risk": 0.4375,
+        "median_risk": 0.45,
+        "high_risk_count": 1584,
+        "high_risk_pct": 23.942,
+        "avg_casualties": 1.726
+      },
+      {
+        "road_type": "rural",
+        "total_accidents": 6639,
+        "avg_risk": 0.4347,
+        "median_risk": 0.45,
+        "high_risk_count": 1592,
+        "high_risk_pct": 23.9795,
+        "avg_casualties": 1.7218
+      },
+      {
+        "road_type": "urban",
+        "total_accidents": 6745,
+        "avg_risk": 0.4406,
+        "median_risk": 0.45,
+        "high_risk_count": 1634,
+        "high_risk_pct": 24.2254,
+        "avg_casualties": 1.7315
+      }
+    ]
+  },
+  "step_7_3_time": {
+    "hour": [
+      {
+        "hour": 0,
+        "total": 840,
+        "avg_risk": 0.3558,
+        "high_risk_count": 112,
+        "high_risk_pct": 13.3333
+      },
+      {
+        "hour": 1,
+        "total": 859,
+        "avg_risk": 0.3523,
+        "high_risk_count": 98,
+        "high_risk_pct": 11.4086
+      },
+      {
+        "hour": 2,
+        "total": 888,
+        "avg_risk": 0.3412,
+        "high_risk_count": 89,
+        "high_risk_pct": 10.0225
+      },
+      {
+        "hour": 3,
+        "total": 824,
+        "avg_risk": 0.3481,
+        "high_risk_count": 107,
+        "high_risk_pct": 12.9854
+      },
+      {
+        "hour": 4,
+        "total": 805,
+        "avg_risk": 0.355,
+        "high_risk_count": 108,
+        "high_risk_pct": 13.4161
+      },
+      {
+        "hour": 5,
+        "total": 827,
+        "avg_risk": 0.4132,
+        "high_risk_count": 211,
+        "high_risk_pct": 25.5139
+      },
+      {
+        "hour": 6,
+        "total": 856,
+        "avg_risk": 0.3903,
+        "high_risk_count": 178,
+        "high_risk_pct": 20.7944
+      },
+      {
+        "hour": 7,
+        "total": 786,
+        "avg_risk": 0.4002,
+        "high_risk_count": 184,
+        "high_risk_pct": 23.4097
+      },
+      {
+        "hour": 8,
+        "total": 849,
+        "avg_risk": 0.6083,
+        "high_risk_count": 332,
+        "high_risk_pct": 39.1048
+      },
+      {
+        "hour": 9,
+        "total": 786,
+        "avg_risk": 0.5949,
+        "high_risk_count": 284,
+        "high_risk_pct": 36.1323
+      },
+      {
+        "hour": 10,
+        "total": 789,
+        "avg_risk": 0.6096,
+        "high_risk_count": 318,
+        "high_risk_pct": 40.3042
+      },
+      {
+        "hour": 11,
+        "total": 841,
+        "avg_risk": 0.408,
+        "high_risk_count": 207,
+        "high_risk_pct": 24.6136
+      },
+      {
+        "hour": 12,
+        "total": 866,
+        "avg_risk": 0.3977,
+        "high_risk_count": 204,
+        "high_risk_pct": 23.5566
+      },
+      {
+        "hour": 13,
+        "total": 878,
+        "avg_risk": 0.3909,
+        "high_risk_count": 181,
+        "high_risk_pct": 20.615
+      },
+      {
+        "hour": 14,
+        "total": 838,
+        "avg_risk": 0.3938,
+        "high_risk_count": 173,
+        "high_risk_pct": 20.6444
+      },
+      {
+        "hour": 15,
+        "total": 811,
+        "avg_risk": 0.3984,
+        "high_risk_count": 182,
+        "high_risk_pct": 22.4414
+      },
+      {
+        "hour": 16,
+        "total": 787,
+        "avg_risk": 0.38,
+        "high_risk_count": 157,
+        "high_risk_pct": 19.9492
+      },
+      {
+        "hour": 17,
+        "total": 861,
+        "avg_risk": 0.605,
+        "high_risk_count": 331,
+        "high_risk_pct": 38.4437
+      },
+      {
+        "hour": 18,
+        "total": 823,
+        "avg_risk": 0.6134,
+        "high_risk_count": 326,
+        "high_risk_pct": 39.6112
+      },
+      {
+        "hour": 19,
+        "total": 840,
+        "avg_risk": 0.5914,
+        "high_risk_count": 305,
+        "high_risk_pct": 36.3095
+      },
+      {
+        "hour": 20,
+        "total": 838,
+        "avg_risk": 0.3911,
+        "high_risk_count": 175,
+        "high_risk_pct": 20.8831
+      },
+      {
+        "hour": 21,
+        "total": 830,
+        "avg_risk": 0.3935,
+        "high_risk_count": 185,
+        "high_risk_pct": 22.2892
+      },
+      {
+        "hour": 22,
+        "total": 853,
+        "avg_risk": 0.3834,
+        "high_risk_count": 169,
+        "high_risk_pct": 19.8124
+      },
+      {
+        "hour": 23,
+        "total": 825,
+        "avg_risk": 0.4028,
+        "high_risk_count": 194,
+        "high_risk_pct": 23.5152
+      }
+    ],
+    "time_period": [
+      {
+        "time_period": "Afternoon",
+        "total": 4180,
+        "avg_risk": 0.3923,
+        "high_risk_count": 897,
+        "high_risk_pct": 21.4593
+      },
+      {
+        "time_period": "Evening",
+        "total": 4192,
+        "avg_risk": 0.5193,
+        "high_risk_count": 1322,
+        "high_risk_pct": 31.5363
+      },
+      {
+        "time_period": "Morning",
+        "total": 4907,
+        "avg_risk": 0.5007,
+        "high_risk_count": 1503,
+        "high_risk_pct": 30.6297
+      },
+      {
+        "time_period": "Night",
+        "total": 6721,
+        "avg_risk": 0.3687,
+        "high_risk_count": 1088,
+        "high_risk_pct": 16.1881
+      }
+    ],
+    "is_peak_hour": [
+      {
+        "is_peak_hour": 0,
+        "total": 15052,
+        "avg_risk": 0.383,
+        "high_risk_count": 2914,
+        "high_risk_pct": 19.3596
+      },
+      {
+        "is_peak_hour": 1,
+        "total": 4948,
+        "avg_risk": 0.6038,
+        "high_risk_count": 1896,
+        "high_risk_pct": 38.3185
+      }
+    ],
+    "is_weekend": [
+      {
+        "is_weekend": 0,
+        "total": 14277,
+        "avg_risk": 0.437,
+        "high_risk_count": 3409,
+        "high_risk_pct": 23.8776
+      },
+      {
+        "is_weekend": 1,
+        "total": 5723,
+        "avg_risk": 0.439,
+        "high_risk_count": 1401,
+        "high_risk_pct": 24.4802
+      }
+    ]
+  },
+  "step_7_4_environment": {
+    "weather": [
+      {
+        "weather": "clear",
+        "total": 6690,
+        "avg_risk": 0.2369,
+        "median_risk": 0.25,
+        "high_risk_count": 144,
+        "high_risk_pct": 2.1525,
+        "avg_casualties": 1.7176
+      },
+      {
+        "weather": "fog",
+        "total": 6633,
+        "avg_risk": 0.5891,
+        "median_risk": 0.6,
+        "high_risk_count": 2981,
+        "high_risk_pct": 44.942,
+        "avg_casualties": 1.719
+      },
+      {
+        "weather": "rain",
+        "total": 6677,
+        "avg_risk": 0.4881,
+        "median_risk": 0.45,
+        "high_risk_count": 1685,
+        "high_risk_pct": 25.2359,
+        "avg_casualties": 1.7427
+      }
+    ],
+    "visibility": [
+      {
+        "visibility": "high",
+        "total": 6690,
+        "avg_risk": 0.2369,
+        "high_risk_count": 144,
+        "high_risk_pct": 2.1525
+      },
+      {
+        "visibility": "low",
+        "total": 9987,
+        "avg_risk": 0.5892,
+        "high_risk_count": 4502,
+        "high_risk_pct": 45.0786
+      },
+      {
+        "visibility": "medium",
+        "total": 3323,
+        "avg_risk": 0.3861,
+        "high_risk_count": 164,
+        "high_risk_pct": 4.9353
+      }
+    ]
+  },
+  "step_7_5_traffic_conditions": {
+    "traffic_density": [
+      {
+        "traffic_density": "high",
+        "total": 7034,
+        "avg_risk": 0.5948,
+        "high_risk_count": 3844,
+        "high_risk_pct": 54.6488,
+        "avg_casualties": 1.7326
+      },
+      {
+        "traffic_density": "low",
+        "total": 7067,
+        "avg_risk": 0.3394,
+        "high_risk_count": 517,
+        "high_risk_pct": 7.3157,
+        "avg_casualties": 1.7204
+      },
+      {
+        "traffic_density": "medium",
+        "total": 5899,
+        "avg_risk": 0.3678,
+        "high_risk_count": 449,
+        "high_risk_pct": 7.6115,
+        "avg_casualties": 1.7264
+      }
+    ],
+    "lanes": [
+      {
+        "lanes": 1,
+        "total": 3382,
+        "avg_risk": 0.4386,
+        "high_risk_count": 824,
+        "high_risk_pct": 24.3643
+      },
+      {
+        "lanes": 2,
+        "total": 3270,
+        "avg_risk": 0.4382,
+        "high_risk_count": 801,
+        "high_risk_pct": 24.4954
+      },
+      {
+        "lanes": 3,
+        "total": 3334,
+        "avg_risk": 0.4355,
+        "high_risk_count": 802,
+        "high_risk_pct": 24.0552
+      },
+      {
+        "lanes": 4,
+        "total": 3383,
+        "avg_risk": 0.4398,
+        "high_risk_count": 801,
+        "high_risk_pct": 23.6772
+      },
+      {
+        "lanes": 5,
+        "total": 3363,
+        "avg_risk": 0.4354,
+        "high_risk_count": 810,
+        "high_risk_pct": 24.0856
+      },
+      {
+        "lanes": 6,
+        "total": 3268,
+        "avg_risk": 0.4379,
+        "high_risk_count": 772,
+        "high_risk_pct": 23.623
+      }
+    ],
+    "traffic_signal": [
+      {
+        "traffic_signal": 0,
+        "total": 10003,
+        "avg_risk": 0.4372,
+        "high_risk_count": 2410,
+        "high_risk_pct": 24.0928
+      },
+      {
+        "traffic_signal": 1,
+        "total": 9997,
+        "avg_risk": 0.438,
+        "high_risk_count": 2400,
+        "high_risk_pct": 24.0072
+      }
+    ]
+  },
+  "step_7_6_driver_table": [
+    {
+      "Variable": "Visibility (Ordinal 1-3)",
+      "Type": "Numerical",
+      "Metric": "Pearson r=-0.7291, rho=-0.7370",
+      "Strength": "Strong Inverse",
+      "Effect_Size": 0.7291,
+      "Interpretation": "Strong inverse correlation (r=-0.7291) - low visibility is tied to peak risk.",
+      "Limitation": "Ordinal scale proxy"
+    },
+    {
+      "Variable": "Accident Severity Score (1-3)",
+      "Type": "Numerical",
+      "Metric": "Pearson r=+0.2595, rho=+0.2208",
+      "Strength": "Moderate Positive",
+      "Effect_Size": 0.2595,
+      "Interpretation": "Positive correlation (r=+0.2595) - severe crashes associate with higher risk index.",
+      "Limitation": "Ordinal scale proxy"
+    },
+    {
+      "Variable": "Hour of Day (0-23)",
+      "Type": "Numerical",
+      "Metric": "Pearson r=+0.1220, rho=+0.1159",
+      "Strength": "Weak Positive",
+      "Effect_Size": 0.122,
+      "Interpretation": "Mild correlation (r=+0.1220).",
+      "Limitation": "Observational correlation only; no causal mechanism established."
+    },
+    {
+      "Variable": "Casualties Count (0-5)",
+      "Type": "Numerical",
+      "Metric": "Pearson r=+0.1200, rho=+0.1122",
+      "Strength": "Weak Positive",
+      "Effect_Size": 0.12,
+      "Interpretation": "Mild correlation (r=+0.1200).",
+      "Limitation": "Observational correlation only; no causal mechanism established."
+    },
+    {
+      "Variable": "Temperature (\u00b0C)",
+      "Type": "Numerical",
+      "Metric": "Pearson r=-0.0019, rho=-0.0022",
+      "Strength": "None / Negligible",
+      "Effect_Size": 0.0019,
+      "Interpretation": "Statistically zero correlation (r=-0.0019, p=0.790) - independent of risk.",
+      "Limitation": "Observational correlation only; no causal mechanism established."
+    },
+    {
+      "Variable": "Lanes Count (1-6)",
+      "Type": "Numerical",
+      "Metric": "Pearson r=-0.0017, rho=-0.0010",
+      "Strength": "None / Negligible",
+      "Effect_Size": 0.0017,
+      "Interpretation": "Statistically zero correlation (r=-0.0017, p=0.808) - independent of risk.",
+      "Limitation": "Observational correlation only; no causal mechanism established."
+    },
+    {
+      "Variable": "Vehicles Involved (1-5)",
+      "Type": "Numerical",
+      "Metric": "Pearson r=+0.0006, rho=+0.0009",
+      "Strength": "None / Negligible",
+      "Effect_Size": 0.0006,
+      "Interpretation": "Statistically zero correlation (r=+0.0006, p=0.928) - independent of risk.",
+      "Limitation": "Observational correlation only; no causal mechanism established."
+    },
+    {
+      "Variable": "Weather Condition",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=8559.5, eta_sq=0.4612",
+      "Strength": "Very Strong",
+      "Effect_Size": 0.4612,
+      "Interpretation": "Dominant driver: accounts for 46.1% of risk score variance (F=8559.5).",
+      "Limitation": "High collinearity with visibility"
+    },
+    {
+      "Variable": "Traffic Density",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=3973.7, eta_sq=0.2844",
+      "Strength": "Strong",
+      "Effect_Size": 0.2844,
+      "Interpretation": "Dominant driver: accounts for 28.4% of risk score variance (F=3973.7).",
+      "Limitation": "Categorical observational grouping without controlling for exposure."
+    },
+    {
+      "Variable": "Peak Hour Flag",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=4716.4, eta_sq=0.1908",
+      "Strength": "Moderate",
+      "Effect_Size": 0.1908,
+      "Interpretation": "Moderate differentiator (19.1% variance explained).",
+      "Limitation": "Categorical observational grouping without controlling for exposure."
+    },
+    {
+      "Variable": "Accident Severity",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=1192.6, eta_sq=0.1066",
+      "Strength": "Moderate",
+      "Effect_Size": 0.1066,
+      "Interpretation": "Moderate differentiator (10.7% variance explained).",
+      "Limitation": "Categorical observational grouping without controlling for exposure."
+    },
+    {
+      "Variable": "Time Period of Day",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=678.7, eta_sq=0.0924",
+      "Strength": "Moderate",
+      "Effect_Size": 0.0924,
+      "Interpretation": "Moderate differentiator (9.2% variance explained).",
+      "Limitation": "Categorical observational grouping without controlling for exposure."
+    },
+    {
+      "Variable": "Reported Accident Cause",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=1.8, eta_sq=0.0004",
+      "Strength": "Negligible / None",
+      "Effect_Size": 0.0004,
+      "Interpretation": "Uniform distribution across categories; does not separate risk levels.",
+      "Limitation": "Categorical observational grouping without controlling for exposure."
+    },
+    {
+      "Variable": "Road Type",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=1.2, eta_sq=0.0001",
+      "Strength": "Negligible / None",
+      "Effect_Size": 0.0001,
+      "Interpretation": "Uniform distribution across categories; does not separate risk levels.",
+      "Limitation": "Categorical observational grouping without controlling for exposure."
+    },
+    {
+      "Variable": "City",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=0.4, eta_sq=0.0001",
+      "Strength": "Negligible / None",
+      "Effect_Size": 0.0001,
+      "Interpretation": "Uniform distribution across categories; does not separate risk levels.",
+      "Limitation": "Categorical observational grouping without controlling for exposure."
+    },
+    {
+      "Variable": "Traffic Signal Presence",
+      "Type": "Categorical",
+      "Metric": "ANOVA F=0.1, eta_sq=0.0000",
+      "Strength": "Negligible / None",
+      "Effect_Size": 0.0,
+      "Interpretation": "Uniform distribution across categories; does not separate risk levels.",
+      "Limitation": "Categorical observational grouping without controlling for exposure."
+    }
+  ],
+  "step_7_7_profile": {
+    "accident_severity": {
+      "fatal": {
+        "High Risk": 37.3,
+        "Low Risk": 0.0,
+        "Medium Risk": 12.03
+      },
+      "major": {
+        "High Risk": 21.62,
+        "Low Risk": 35.51,
+        "Medium Risk": 31.01
+      },
+      "minor": {
+        "High Risk": 41.08,
+        "Low Risk": 64.49,
+        "Medium Risk": 56.96
+      }
+    },
+    "weather": {
+      "clear": {
+        "High Risk": 2.99,
+        "Low Risk": 70.43,
+        "Medium Risk": 28.56
+      },
+      "fog": {
+        "High Risk": 61.98,
+        "Low Risk": 0.0,
+        "Medium Risk": 36.82
+      },
+      "rain": {
+        "High Risk": 35.03,
+        "Low Risk": 29.57,
+        "Medium Risk": 34.61
+      }
+    },
+    "traffic_density": {
+      "high": {
+        "High Risk": 79.92,
+        "Low Risk": 0.0,
+        "Medium Risk": 32.16
+      },
+      "low": {
+        "High Risk": 10.75,
+        "Low Risk": 55.97,
+        "Medium Risk": 36.29
+      },
+      "medium": {
+        "High Risk": 9.33,
+        "Low Risk": 44.03,
+        "Medium Risk": 31.55
+      }
+    },
+    "time_period": {
+      "Afternoon": {
+        "High Risk": 18.65,
+        "Low Risk": 23.05,
+        "Medium Risk": 20.85
+      },
+      "Evening": {
+        "High Risk": 27.48,
+        "Low Risk": 14.64,
+        "Medium Risk": 21.15
+      },
+      "Morning": {
+        "High Risk": 31.25,
+        "Low Risk": 18.13,
+        "Medium Risk": 24.68
+      },
+      "Night": {
+        "High Risk": 22.62,
+        "Low Risk": 44.18,
+        "Medium Risk": 33.31
+      }
+    },
+    "road_type": {
+      "highway": {
+        "High Risk": 32.93,
+        "Low Risk": 33.27,
+        "Medium Risk": 33.05
+      },
+      "rural": {
+        "High Risk": 33.1,
+        "Low Risk": 33.63,
+        "Medium Risk": 33.01
+      },
+      "urban": {
+        "High Risk": 33.97,
+        "Low Risk": 33.1,
+        "Medium Risk": 33.94
+      }
+    },
+    "numeric_means": {
+      "casualties": {
+        "High Risk": 2.075,
+        "Low Risk": 1.502,
+        "Medium Risk": 1.677
+      },
+      "vehicles_involved": {
+        "High Risk": 3.005,
+        "Low Risk": 2.995,
+        "Medium Risk": 2.984
+      },
+      "visibility_score": {
+        "High Risk": 1.094,
+        "Low Risk": 2.704,
+        "Medium Risk": 1.733
+      },
+      "temperature": {
+        "High Risk": 27.712,
+        "Low Risk": 27.66,
+        "Medium Risk": 27.473
+      },
+      "lanes": {
+        "High Risk": 3.476,
+        "Low Risk": 3.487,
+        "Medium Risk": 3.506
+      }
+    }
+  },
+  "step_7_8_geographic_grids": [
+    {
+      "city": "delhi",
+      "lat_bin": 28.5,
+      "lon_bin": 77.3,
+      "total": 52,
+      "high_risk": 20,
+      "avg_risk": 0.5153846153846154,
+      "high_risk_pct": 38.46
+    },
+    {
+      "city": "mumbai",
+      "lat_bin": 18.9,
+      "lon_bin": 72.7,
+      "total": 85,
+      "high_risk": 29,
+      "avg_risk": 0.48117647058823526,
+      "high_risk_pct": 34.12
+    },
+    {
+      "city": "hyderabad",
+      "lat_bin": 17.3,
+      "lon_bin": 78.6,
+      "total": 71,
+      "high_risk": 24,
+      "avg_risk": 0.5028169014084507,
+      "high_risk_pct": 33.8
+    },
+    {
+      "city": "delhi",
+      "lat_bin": 28.5,
+      "lon_bin": 77.1,
+      "total": 92,
+      "high_risk": 31,
+      "avg_risk": 0.4527173913043478,
+      "high_risk_pct": 33.7
+    },
+    {
+      "city": "pune",
+      "lat_bin": 18.6,
+      "lon_bin": 73.7,
+      "total": 143,
+      "high_risk": 47,
+      "avg_risk": 0.4513986013986014,
+      "high_risk_pct": 32.87
+    },
+    {
+      "city": "delhi",
+      "lat_bin": 28.7,
+      "lon_bin": 77.1,
+      "total": 90,
+      "high_risk": 29,
+      "avg_risk": 0.47388888888888886,
+      "high_risk_pct": 32.22
+    },
+    {
+      "city": "delhi",
+      "lat_bin": 28.7,
+      "lon_bin": 76.8,
+      "total": 56,
+      "high_risk": 18,
+      "avg_risk": 0.47053571428571433,
+      "high_risk_pct": 32.14
+    },
+    {
+      "city": "mumbai",
+      "lat_bin": 19.2,
+      "lon_bin": 72.7,
+      "total": 78,
+      "high_risk": 25,
+      "avg_risk": 0.44871794871794873,
+      "high_risk_pct": 32.05
+    },
+    {
+      "city": "bangalore",
+      "lat_bin": 12.8,
+      "lon_bin": 77.5,
+      "total": 89,
+      "high_risk": 28,
+      "avg_risk": 0.4623595505617977,
+      "high_risk_pct": 31.46
+    },
+    {
+      "city": "kolkata",
+      "lat_bin": 22.7,
+      "lon_bin": 88.2,
+      "total": 55,
+      "high_risk": 17,
+      "avg_risk": 0.4581818181818182,
+      "high_risk_pct": 30.91
+    }
+  ],
+  "step_7_15_model_results": {
+    "Logistic Regression": {
+      "accuracy": 0.8768,
+      "precision_macro": 0.8964,
+      "precision_weighted": 0.8882,
+      "recall_macro": 0.8711,
+      "recall_weighted": 0.8768,
+      "f1_macro": 0.8738,
+      "f1_weighted": 0.8751,
+      "confusion_matrix": [
+        [
+          1054,
+          0,
+          0
+        ],
+        [
+          235,
+          1749,
+          0
+        ],
+        [
+          0,
+          258,
+          704
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 0.8176881303335919,
+          "recall": 1.0,
+          "f1-score": 0.8997012377294067,
+          "support": 1054.0
+        },
+        "Medium Risk": {
+          "precision": 0.8714499252615845,
+          "recall": 0.8815524193548387,
+          "f1-score": 0.8764720621398145,
+          "support": 1984.0
+        },
+        "High Risk": {
+          "precision": 1.0,
+          "recall": 0.7318087318087318,
+          "f1-score": 0.8451380552220888,
+          "support": 962.0
+        },
+        "accuracy": 0.87675,
+        "macro avg": {
+          "precision": 0.8963793518650588,
+          "recall": 0.8711203837211903,
+          "f1-score": 0.8737704516971033,
+          "support": 4000.0
+        },
+        "weighted avg": {
+          "precision": 0.8881999852726474,
+          "recall": 0.87675,
+          "f1-score": 0.8750571212439591,
+          "support": 4000.0
+        }
+      }
+    },
+    "Decision Tree": {
+      "accuracy": 0.8888,
+      "precision_macro": 0.9081,
+      "precision_weighted": 0.898,
+      "recall_macro": 0.8789,
+      "recall_weighted": 0.8888,
+      "f1_macro": 0.8845,
+      "f1_weighted": 0.8867,
+      "confusion_matrix": [
+        [
+          1052,
+          2,
+          0
+        ],
+        [
+          185,
+          1799,
+          0
+        ],
+        [
+          0,
+          258,
+          704
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 0.8504446240905417,
+          "recall": 0.9981024667931688,
+          "f1-score": 0.9183762549105194,
+          "support": 1054.0
+        },
+        "Medium Risk": {
+          "precision": 0.8737251092763477,
+          "recall": 0.9067540322580645,
+          "f1-score": 0.8899332179074945,
+          "support": 1984.0
+        },
+        "High Risk": {
+          "precision": 1.0,
+          "recall": 0.7318087318087318,
+          "f1-score": 0.8451380552220888,
+          "support": 962.0
+        },
+        "accuracy": 0.88875,
+        "macro avg": {
+          "precision": 0.9080565777889631,
+          "recall": 0.8788884102866551,
+          "f1-score": 0.884482509346701,
+          "support": 4000.0
+        },
+        "weighted avg": {
+          "precision": 0.8979598126489262,
+          "recall": 0.88875,
+          "f1-score": 0.8866547215319515,
+          "support": 4000.0
+        }
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.8872,
+      "precision_macro": 0.9045,
+      "precision_weighted": 0.8955,
+      "recall_macro": 0.8782,
+      "recall_weighted": 0.8872,
+      "f1_macro": 0.8829,
+      "f1_weighted": 0.8851,
+      "confusion_matrix": [
+        [
+          1054,
+          0,
+          0
+        ],
+        [
+          185,
+          1791,
+          8
+        ],
+        [
+          0,
+          258,
+          704
+        ]
+      ],
+      "classification_report": {
+        "Low Risk": {
+          "precision": 0.8506860371267151,
+          "recall": 1.0,
+          "f1-score": 0.9193196685564762,
+          "support": 1054.0
+        },
+        "Medium Risk": {
+          "precision": 0.8740849194729137,
+          "recall": 0.9027217741935484,
+          "f1-score": 0.8881725762459708,
+          "support": 1984.0
+        },
+        "High Risk": {
+          "precision": 0.9887640449438202,
+          "recall": 0.7318087318087318,
+          "f1-score": 0.8410991636798089,
+          "support": 962.0
+        },
+        "accuracy": 0.88725,
+        "macro avg": {
+          "precision": 0.9045116671811497,
+          "recall": 0.8781768353340934,
+          "f1-score": 0.8828638028274186,
+          "support": 4000.0
+        },
+        "weighted avg": {
+          "precision": 0.8954996436504433,
+          "recall": 0.88725,
+          "f1-score": 0.885058679347627,
+          "support": 4000.0
+        }
+      }
+    }
+  },
+  "step_7_16_feature_importance": [
+    {
+      "feature": "visibility_score",
+      "importance": 0.30334777975684407
+    },
+    {
+      "feature": "traffic_density_medium",
+      "importance": 0.1763781112678225
+    },
+    {
+      "feature": "traffic_density_low",
+      "importance": 0.17069512334727185
+    },
+    {
+      "feature": "weather_fog",
+      "importance": 0.10823241813545888
+    },
+    {
+      "feature": "hour",
+      "importance": 0.04183070372957201
+    },
+    {
+      "feature": "is_peak_hour",
+      "importance": 0.03621515038378619
+    },
+    {
+      "feature": "temperature",
+      "importance": 0.029449738512913774
+    },
+    {
+      "feature": "month",
+      "importance": 0.024161309052207078
+    },
+    {
+      "feature": "weather_rain",
+      "importance": 0.023631118438997255
+    },
+    {
+      "feature": "lanes",
+      "importance": 0.018272573084947667
+    },
+    {
+      "feature": "traffic_signal",
+      "importance": 0.0069105703349699584
+    },
+    {
+      "feature": "road_type_urban",
+      "importance": 0.006053788151230807
+    },
+    {
+      "feature": "road_type_rural",
+      "importance": 0.005950518791150366
+    },
+    {
+      "feature": "city_mumbai",
+      "importance": 0.003722496980012931
+    },
+    {
+      "feature": "day_of_week_Monday",
+      "importance": 0.0036951677482991805
+    }
+  ]
+}

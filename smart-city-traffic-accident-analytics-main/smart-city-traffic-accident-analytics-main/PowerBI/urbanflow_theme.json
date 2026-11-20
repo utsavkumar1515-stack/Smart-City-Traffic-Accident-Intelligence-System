@@ -1,0 +1,65 @@
+{
+  "name": "UrbanFlow Dark Smart City Theme",
+  "dataColors": [
+    "#2ECC71",
+    "#F39C12",
+    "#E74C3C",
+    "#3498DB",
+    "#9B59B6",
+    "#1ABC9C",
+    "#E67E22",
+    "#34495E"
+  ],
+  "background": "#0B132B",
+  "foreground": "#1C2541",
+  "tableAccent": "#3A506B",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#111827" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "color": { "solid": { "color": "#1F2937" } },
+            "width": 1,
+            "radius": 6
+          }
+        ],
+        "title": [
+          {
+            "color": { "solid": { "color": "#F9FAFB" } },
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 12
+          }
+        ],
+        "labels": [
+          {
+            "color": { "solid": { "color": "#E5E7EB" } },
+            "fontFamily": "Segoe UI"
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "cardTitle": [
+          {
+            "color": { "solid": { "color": "#9CA3AF" } },
+            "fontSize": 10
+          }
+        ],
+        "cardDataLabel": [
+          {
+            "color": { "solid": { "color": "#38BDF8" } },
+            "fontFamily": "Segoe UI Bold",
+            "fontSize": 20
+          }
+        ]
+      }
+    }
+  }
+}
